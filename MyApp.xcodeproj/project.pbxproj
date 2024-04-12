@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92EA22982BC93FB4007A9A56 /* MyPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 92EA22972BC93FB4007A9A56 /* MyPackage */; };
+		92EA229C2BC93FE2007A9A56 /* MyObjcClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EA229B2BC93FE2007A9A56 /* MyObjcClass.m */; };
+		92EA229E2BC9430F007A9A56 /* MySwiftClassInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA229D2BC9430F007A9A56 /* MySwiftClassInApp.swift */; };
 		92FC04D72BC93DA200FE730F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC04D62BC93DA200FE730F /* AppDelegate.swift */; };
 		92FC04D92BC93DA200FE730F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC04D82BC93DA200FE730F /* SceneDelegate.swift */; };
 		92FC04DB2BC93DA200FE730F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC04DA2BC93DA200FE730F /* ViewController.swift */; };
@@ -16,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92EA22952BC93FAC007A9A56 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = "<group>"; };
+		92EA22992BC93FC6007A9A56 /* MyObjcClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyObjcClass.h; sourceTree = "<group>"; };
+		92EA229A2BC93FE2007A9A56 /* MyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		92EA229B2BC93FE2007A9A56 /* MyObjcClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyObjcClass.m; sourceTree = "<group>"; };
+		92EA229D2BC9430F007A9A56 /* MySwiftClassInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftClassInApp.swift; sourceTree = "<group>"; };
 		92FC04D32BC93DA200FE730F /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FC04D62BC93DA200FE730F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92FC04D82BC93DA200FE730F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +39,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92EA22982BC93FB4007A9A56 /* MyPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92EA22962BC93FB4007A9A56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92FC04CA2BC93DA200FE730F = {
 			isa = PBXGroup;
 			children = (
+				92EA22952BC93FAC007A9A56 /* Modules */,
 				92FC04D52BC93DA200FE730F /* MyApp */,
 				92FC04D42BC93DA200FE730F /* Products */,
+				92EA22962BC93FB4007A9A56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +81,10 @@
 				92FC04DF2BC93DA300FE730F /* Assets.xcassets */,
 				92FC04E12BC93DA300FE730F /* LaunchScreen.storyboard */,
 				92FC04E42BC93DA300FE730F /* Info.plist */,
+				92EA22992BC93FC6007A9A56 /* MyObjcClass.h */,
+				92EA229B2BC93FE2007A9A56 /* MyObjcClass.m */,
+				92EA229A2BC93FE2007A9A56 /* MyApp-Bridging-Header.h */,
+				92EA229D2BC9430F007A9A56 /* MySwiftClassInApp.swift */,
 			);
 			path = MyApp;
 			sourceTree = "<group>";
@@ -83,6 +105,9 @@
 			dependencies = (
 			);
 			name = MyApp;
+			packageProductDependencies = (
+				92EA22972BC93FB4007A9A56 /* MyPackage */,
+			);
 			productName = MyApp;
 			productReference = 92FC04D32BC93DA200FE730F /* MyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +124,7 @@
 				TargetAttributes = {
 					92FC04D22BC93DA200FE730F = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -111,6 +137,8 @@
 				Base,
 			);
 			mainGroup = 92FC04CA2BC93DA200FE730F;
+			packageReferences = (
+			);
 			productRefGroup = 92FC04D42BC93DA200FE730F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				92FC04DB2BC93DA200FE730F /* ViewController.swift in Sources */,
+				92EA229E2BC9430F007A9A56 /* MySwiftClassInApp.swift in Sources */,
 				92FC04D72BC93DA200FE730F /* AppDelegate.swift in Sources */,
+				92EA229C2BC93FE2007A9A56 /* MyObjcClass.m in Sources */,
 				92FC04D92BC93DA200FE730F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J8B76VBZ57;
@@ -305,9 +336,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-enable-upcoming-feature ImportObjcForwardDeclarations";
 				PRODUCT_BUNDLE_IDENTIFIER = info.ddenis.MyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyApp/MyApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -318,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J8B76VBZ57;
@@ -333,9 +368,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-enable-upcoming-feature ImportObjcForwardDeclarations";
 				PRODUCT_BUNDLE_IDENTIFIER = info.ddenis.MyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyApp/MyApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +400,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92EA22972BC93FB4007A9A56 /* MyPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 92FC04CB2BC93DA200FE730F /* Project object */;
 }
